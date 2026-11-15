@@ -23,7 +23,58 @@
     <li><a href="mailto:hello@example.com">راسل الأكاديمية</a></li>
     <li><a href="tel:+96260000000">اتصل بالأكاديمية</a></li>
   </ul>
+<section>
+    <h2>استفسر عن كورس</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="full-name">الاسم الكامل:</label><br>
+        <input type="text" id="full-name" name="full_name" placeholder="مثال: أحمد الحسن" autocomplete="name" required>
+      </div>
+      <br>
 
+      <div>
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+      </div>
+      <br>
+
+      <div>
+        <label for="phone">رقم الهاتف:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="0790000000" autocomplete="tel">
+      </div>
+      <br>
+
+      <div>
+        <label for="course">الكورس:</label><br>
+        <select id="course" name="course" required>
+          <option value="">اختر كورسًا</option>
+          <option value="content">HTML Content</option>
+          <option value="forms">HTML Forms</option>
+        </select>
+      </div>
+      <br>
+
+      <div>
+        <label for="seats">عدد المقاعد:</label><br>
+        <input type="number" id="seats" name="seats" value="1" min="1">
+      </div>
+      <br>
+
+      <div>
+        <label for="preferred-date">التاريخ المفضل:</label><br>
+        <input type="date" id="preferred-date" name="preferred_date">
+      </div>
+      <br>
+
+      <div>
+        <label for="message">نص الاستفسار:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="اكتب استفسارك هنا..."></textarea>
+      </div>
+      <br>
+
+      <button type="submit">إرسال الاستفسار</button>
+    </form>
+  </section>
 </body>
 </html>
 
